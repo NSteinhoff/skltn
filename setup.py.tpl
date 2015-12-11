@@ -20,12 +20,12 @@ def read(*filenames, **kwargs):
 setup(
     name='${package}',
     version=versioneer.get_version(),
-    cmdclass=versioneer.get_cmdclass(),
-    packages=find_packages(),
-    url='${url}',
-    license='${license}',
     author='${authors_string}',
     author_email=${emails},
+    license='${license}',
+    packages=find_packages(),
+    url='${url}',
     description='${description}',
     long_description=read('README.md', 'CHANGELOG'),
+    cmdclass=versioneer.get_cmdclass(),
     )

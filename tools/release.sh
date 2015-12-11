@@ -1,4 +1,5 @@
 #!/bin/bash
+
 venv_name=.virtualenv_release
 virtualenv_activate=./${venv_name}/bin/activate
 
