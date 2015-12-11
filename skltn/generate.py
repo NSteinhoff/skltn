@@ -7,6 +7,11 @@ import subprocess
 import shutil
 
 
+def restore_permissions(orig, path):
+    mode = os.stat(orig).st_mode
+    os.chmod(path, mode)
+
+
 def main():
     # If not in the project root directory, go to it.
     project_root = os.path.dirname(os.path.dirname(
@@ -45,6 +50,9 @@ def main():
                 real_file.write(template.safe_substitute(
                     project_underline=project_underline,
                     **metadata.__dict__))
+
+            # Restore original permissions
+            restore_permissions(tpl_path, real_path)
 
             # Remove the template file.
             os.remove(tpl_path)
