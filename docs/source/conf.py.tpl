@@ -34,6 +34,7 @@ ${package}.project_no_spaces = '${project_no_spaces}'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 extensions = ['sphinx.ext.autodoc',
               'sphinxcontrib.napoleon',
+              'sphinx.ext.doctest',
               'sphinx.ext.intersphinx',
               'sphinx.ext.todo',
               'sphinx.ext.coverage',
