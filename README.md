@@ -12,17 +12,17 @@ This project provides a template for Python projects. It uses
 
 1. Clone this repository
 
-    git clone https://github.com/ksonj/python-project-template my_project
-    cd my_project
+        git clone https://github.com/ksonj/python-project-template my_project
+        cd my_project
 
 2. Edit the metadata in `skltn/metadata.py`.
 
 3. Then run
 
-    python skltn/generate.py
+        python skltn/generate.py
 
-This will fill the templates with the data provided in `skltn/metadata.py`,
-remove the original `.git` directory and initialize a fresh git repository.
+    This will fill the templates with the data provided in `skltn/metadata.py`,
+    remove the original `.git` directory and initialize a fresh git repository.
 
 4. Replace this README with your own version
 
