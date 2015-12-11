@@ -28,5 +28,4 @@ setup(
     author_email=${emails},
     description='${description}',
     long_description=read('README.md', 'CHANGELOG'),
-    platforms='any'
     )
