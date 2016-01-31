@@ -5,7 +5,7 @@ This project provides a template for Python projects. It uses
 * [setuptools](http://pythonhosted.org/setuptools/merge.html) for distribution
 * [sphinx](http://sphinx-doc.org/) for documentation
 * [flake8](https://pypi.python.org/pypi/flake8) for code style checks
-* [tox](https://tox.readthedocs.org/en/latest/) and [nose](https://nose.readthedocs.org/en/latest/) for testing
+* [tox](https://tox.readthedocs.org/en/latest/) and [pytest](https://pytest.org/latest/) for testing
 * [versioneer](https://github.com/warner/python-versioneer) to auto-update the version string
 
 ## Setup Instructions

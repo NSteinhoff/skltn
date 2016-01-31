@@ -1,15 +1,6 @@
 # Testing
 tox
 pytest
-py
-mock
-coverage
-httpretty
-httmock
-nose
-nosexcover
-unittest2
 
 # Linting
 flake8
-mccabe

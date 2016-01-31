@@ -2,19 +2,10 @@
 exit-zero=true
 statistics=true
 show-pep8=true
+exclude=docs/
 
-[nosetests]
-verbosity=1
-debug=0
-detailed-errors=1
-with-xunit=1
-with-xcoverage=1
-xunit-file=test_output/output.xml
-cover-package=${package}
-cover-erase=1
-cover-html=1
-cover-html-dir=coverage_output/
-xcoverage-file=coverage_output/coverage.xml
+[pytest]
+testpaths = tests
 
 [build_sphinx]
 all_files = 1
