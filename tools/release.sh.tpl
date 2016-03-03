@@ -13,5 +13,6 @@ fi
 
 $venv_bin/pip install wheel
 $venv_bin/pip install -r requirements-release.txt
+$venv_bin/pip install ${package}
 
 $venv_bin/python setup.py sdist bdist_egg bdist_wheel
