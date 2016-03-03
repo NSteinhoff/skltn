@@ -1,18 +1,17 @@
 #!/bin/bash
 
-venv_name=.virtualenv_release
-virtualenv_activate=./${venv_name}/bin/activate
+venv_name=.venv_release
+venv_bin=./${venv_name}/bin
 
 # Validate the virtualenv and activate it
-if [[ ! -e $virtualenv_activate ]]
+if [[ ! -e $venv_name ]]
 then
-  virtualenv $venv_name
+    virtualenv --clear $venv_name
+else
+    virtualenv $venv_name
 fi
-. ${virtualenv_activate}
 
-pip install wheel
+$venv_bin/pip install wheel
+$venv_bin/pip install -r requirements-release.txt
 
-if [[ -e "./setup.py" ]]
-then
-  python setup.py sdist bdist_egg bdist_wheel
-fi
+$venv_bin/python setup.py sdist bdist_egg bdist_wheel
