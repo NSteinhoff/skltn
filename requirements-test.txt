@@ -1,6 +1,7 @@
 # Testing
 tox
 pytest
+pytest-cov
 
 # Linting
 flake8
