@@ -7,6 +7,15 @@ exclude=docs/
 [pytest]
 testpaths = tests
 
+[coverage:run]
+omit =
+    ${package}/_version.py
+source =
+    ${package}
+
+[coverage:report]
+show_missing = true
+
 [build_sphinx]
 all_files = 1
 build-dir = docs/build
@@ -14,11 +23,6 @@ source-dir = docs/source
 
 [upload_sphinx]
 upload-dir = docs/build/html
-
-[egg_info]
-tag_build = 
-tag_date = 0
-tag_svn_revision = 0
 
 [versioneer]
 VCS = git
