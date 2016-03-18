@@ -14,7 +14,7 @@ This project provides a template for Python projects. It uses
 
 1. Clone this repository
 
-        git clone https://github.com/ksonj/python-project-template my_project
+        git clone https://github.com/ksonj/skltn my_project
         cd my_project
 
 2. Edit the metadata in `skltn/metadata.py`.
