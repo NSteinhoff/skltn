@@ -2,3 +2,5 @@
 .virtualenv*
 *.pyc
 *.egg-info
+.coverage
+.cache
