@@ -1,2 +1,4 @@
 .tox
 .virtualenv*
+*.pyc
+*.egg-info
