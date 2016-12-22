@@ -10,7 +10,7 @@ def get_author_detail(arg='name'):
     p = subprocess.Popen(['git', 'config', 'user.{}'.format(arg)],
                          stdout=subprocess.PIPE)
     try:
-        out, _ = p.communicate()
+        out, _ = p.communicate().decode('utf-8')
     except:
         out = ''
     return out.strip() or None
