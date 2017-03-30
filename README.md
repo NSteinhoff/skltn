@@ -5,7 +5,7 @@ This project provides a template for Python projects. It uses
 * [setuptools](http://pythonhosted.org/setuptools/merge.html) for distribution
 * [sphinx](http://sphinx-doc.org/) for documentation
 * [flake8](https://pypi.python.org/pypi/flake8) for code style checks
-* [tox](https://tox.readthedocs.org/en/latest/), [pytest](https://pytest.org/latest/) and [coverage](https://coverage.readthedocs.org/en/coverage-4.0.3/) for testing
+* [tox](https://tox.readthedocs.org/en/latest/), [pytest](https://pytest.org/latest/) and [coverage](https://coverage.readthedocs.org/en/latest/) for testing
 * [versioneer](https://github.com/warner/python-versioneer) to auto-update the version string
 
 `skltn` is inspired by https://github.com/rocktavious/python-project-template
@@ -33,11 +33,5 @@ This project provides a template for Python projects. It uses
 
 The scripts in `tools/` serve the following purposes:
 
-* `clean.sh`: Reset the directory to the state of the current git commit
 * `docs.sh`: Create the documentation via sphinx
-* `freeze.sh`: Freeze the current environment into `requirements-release.txt`
-* `lint.sh`: Exercise style checks
-* `release.sh`: Create a wheel and an egg distribution by via the requirements
-  in `requirements-release.txt`. Remember to update the requirements with
-  `freeze.sh` if necessary and desired.
-* `test.sh`: Run tests via `coverage` and `pytest`.
+* `test.sh`: Run tests via `pytest` and report with `coverage`.

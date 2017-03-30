@@ -1,4 +1,0 @@
---requirement requirements.txt
---requirement requirements-test.txt
---requirement requirements-doc.txt
---requirement requirements-release.txt

@@ -12,7 +12,6 @@ else
 fi
 
 $venv_bin/pip install -r requirements.txt
-$venv_bin/pip install -r requirements-doc.txt
 
 $venv_bin/sphinx-apidoc -o docs/source ${package}
 $venv_bin/python setup.py build_sphinx

@@ -4,7 +4,7 @@ statistics=true
 show-pep8=true
 exclude=docs/
 
-[pytest]
+[tool:pytest]
 testpaths = tests
 
 [coverage:run]
@@ -12,6 +12,8 @@ omit =
     ${package}/_version.py
 source =
     ${package}
+sort =
+    Miss
 
 [coverage:report]
 show_missing = true

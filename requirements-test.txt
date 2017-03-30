@@ -1,7 +1,0 @@
-# Testing
-tox
-pytest
-coverage
-
-# Linting
-flake8
