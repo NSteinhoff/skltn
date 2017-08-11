@@ -2,5 +2,11 @@
 .virtualenv*
 *.pyc
 *.egg-info
+*.swp
 .coverage
 .cache
+.tags
+devenv
+docs/build
+build
+*.ipynb_checkpoints*
