@@ -24,6 +24,8 @@ description = 'It does cool things'
 authors = [get_author_detail('name') or 'John Doe']
 authors_string = ', '.join(authors)
 emails = [get_author_detail('email') or 'doe@example.org']
+authors_details_string = ', '.join("{} ({})".format(a, e)
+                                   for a, e in zip(authors, emails))
 license = 'MIT'
 copyright = '2016 ' + authors_string
 url = 'http://example.com/'

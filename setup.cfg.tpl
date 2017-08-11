@@ -12,8 +12,6 @@ omit =
     ${package}/_version.py
 source =
     ${package}
-sort =
-    Miss
 
 [coverage:report]
 show_missing = true
